@@ -33,4 +33,4 @@ $ git clone https://github.com/exemple/ProjetOpenSource.git
 ```
 Cela devrait afficher ces petites lignes de commandes !
 
- ![](assets/15549712882555_9.png?)
+ ![](assets/image_clone.png?)
