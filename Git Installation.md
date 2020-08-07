@@ -1,8 +1,8 @@
 # Installation de Git
-```
+
 > Avant de commencer à utiliser Git, il faut qu’il soit disponible sur votre ordinateur. Même s’il est déjà installé, c’est probablement une bonne idée d’utiliser la dernière version disponible. Vous pouvez l’installer soit comme paquet ou avec un installateur, soit en téléchargeant le code et en le
 compilant par vous-même.
-```
+
 ## Installation sur Linux :
 
 Si vous voulez installer les outils basiques de Git sur Linux via un installateur binaire, vous pouvez généralement le faire au moyen de l’outil de gestion de paquet fourni avec votre distribution. Sur Fedora, par exemple, vous pouvez utiliser dnf :
