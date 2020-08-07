@@ -1,8 +1,6 @@
 # Installation de Git
 ```
-Avant de commencer à utiliser Git, il faut qu’il soit disponible sur votre ordinateur. 
-Même s’il est déjà installé, c’est probablement une bonne idée d’utiliser la dernière version disponible. 
-Vous pouvez l’installer soit comme paquet ou avec un installateur, soit en téléchargeant le code et en le
+> Avant de commencer à utiliser Git, il faut qu’il soit disponible sur votre ordinateur. Même s’il est déjà installé, c’est probablement une bonne idée d’utiliser la dernière version disponible. Vous pouvez l’installer soit comme paquet ou avec un installateur, soit en téléchargeant le code et en le
 compilant par vous-même.
 ```
 ## Installation sur Linux :
