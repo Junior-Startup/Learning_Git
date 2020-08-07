@@ -9,14 +9,14 @@
 
 
 ## Pourquoi un système de contrôle de version comme Git est nécessaire:
-```
-Les projets réels ont généralement plusieurs développeurs travaillant en parallèle.
+
+>Les projets réels ont généralement plusieurs développeurs travaillant en parallèle.
 Un système de contrôle de version comme Git est donc nécessaire pour s'assurer qu'il
 n'y a pas de conflit de code entre les développeurs.
 
-De plus, les exigences de ces projets changent souvent. Ainsi, un système de contrôle
+>De plus, les exigences de ces projets changent souvent. Ainsi, un système de contrôle
 de version permet aux développeurs de revenir à une ancienne version du code.
 
-Enfin, il arrive que plusieurs projets exécutés en parallèle impliquent la même
+>Enfin, il arrive que plusieurs projets exécutés en parallèle impliquent la même
 base de code. Dans un tel cas, le concept de branchement dans Git est très important.
-```
+
