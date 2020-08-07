@@ -1,6 +1,6 @@
 # Configuration de base
 
->Initialisation de votre dossier en locale qui va être lié avec github .
+> Initialisation de votre dossier en local qui va être lié avec github.
 on doit exécuter la commande suivante pour que les commandes de git peuvent être lues par la terminale.
 ```
 $ cd user/desktop/monDepot
