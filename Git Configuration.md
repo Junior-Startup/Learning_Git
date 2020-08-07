@@ -1,7 +1,7 @@
 # Configuration de base
 
 >Initialisation de votre dossier en locale qui va être lié avec github .
-on doit exécuter la commande suivate pour que les commandes de git peuvent être lues par la terminale.
+on doit exécuter la commande suivante pour que les commandes de git peuvent être lues par la terminale.
 ```
 $ cd user/desktop/monDepot
 
@@ -9,12 +9,12 @@ $ git init
 
 ```
 
->vous devez créer un repository sur github
+> Vous devez créer un repository sur github
 ```
 aller sur le navigateur
 ```
 
->Il va falloir tout d’abord récupérer l’URL du dépôt distant.
+> Il va falloir tout d’abord récupérer l’URL du dépôt distant.
 ```
 Allez dans GitHub et accédez au dépôt distant de notre projet, puis Cliquez sur le bouton Clone or download.
 
