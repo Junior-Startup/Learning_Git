@@ -15,7 +15,7 @@ $ git branch testing
 >Comment Git sait-il dans quelle branche vous êtes actuellement? Il garde un pointeur spécial appelé **HEAD**.
 Dans ce cas,vous êtes toujours en *Master*. La commande git branch a uniquement créé une nouvelle branche.Elle n'a pas basculé vers cette branche.
 
-![](assets/fig2.png? "HEAD pointing to a branch")
+![](assets/fig2.png?)
 >Vous pouvez facilement voir cela en exécutant une simple commande git log qui vous montre où les pointeurs de branche pointent. Cette option s'appelle --decorate.
 ```shell
 $ git log --oneline --decorate
@@ -33,17 +33,17 @@ $ git checkout testing
 ```
 >Cela déplace HEAD pour qu'il pointe vers la branche **testing**.
 
-![](assets/fig3.png? "HEAD points to the current branch")
+![](assets/fig3.png?)
 >Quelle est la signification de cela ? Eh bien, faisons un autre commit:
 ```shell
 $ git commit -a -m 'made a change'
 ```
-![](assets/fig4.png? "The HEAD branch moves forward when a commit is made")
+![](assets/fig4.png?)
 >C'est intéressant, car maintenant votre branche **testing** a avancé, mais votre branche **Master** pointe toujours vers le commit sur lequel vous étiez lorsque vous avez exécuté git checkout pour changer de branche. Retournons maintenant à la branche **Master** :
 ```shell
 $ git checkout master
 ```
-![](assets/fig5.png? "HEAD moves when you checkout")
+![](assets/fig5.png?)
 >Il est important de noter que lorsque vous changez de branche dans Git, les fichiers de votre répertoire de travail vont changer. Si vous passez à une ancienne branche, votre répertoire de travail sera rétabli pour ressembler à ce qu'il était la dernière fois quand vous vous êtes engagés dans cette branche.
 
 >Apportons quelques modifications et recommençons:
@@ -53,7 +53,7 @@ $ git commit -a -m 'made other changes'
 >L'historique de votre projet a maintenant divergé. Vous avez créer et basculer vers une nouvelle branche. Vous avez effectué quelques modifs, puis vous êtes revenus à la branche **Master** et de nouvelles modifs ont été apportées.
 Toutes ces modifications sont isolées dans des branches séparées : vous pouvez basculer entre les branches et les fusionner lorsque vous le souhaitez.
 
-![](assets/fig6.png? "Divergent History")
+![](assets/fig6.png?)
 >Vous pouvez le voir facilement avec la commande git log. Si vous exécutez git log --oneline --decorate --graph --all ça va afficher l'historique de vos commits, tout en montrant où se trouvent vos pointeurs de branche et comment votre historique a divergé.
 ```shell
 $ git log --oneline --decorate --graph --all
@@ -83,7 +83,7 @@ le monde réel. Vous suivrez ces étapes:
 ### Branching
 >Tout d'abord, disons que vous travaillez sur votre projet et que vous avez déjà quelques validations sur branche **Master**.
 
-![](assets/fig7.png? "A simple commit history")
+![](assets/fig7.png?)
 
 >Vous avez décidé de travailler sur l'issue n ° 53 dans le système de suivi des issues de votre entreprise. Pour créer une nouvelle branche et y basculer en même temps, vous pouvez exécuter la
 commande checkout avec le commutateur -b :
@@ -91,11 +91,11 @@ commande checkout avec le commutateur -b :
 $ git checkout -b iss53
 Switched to a new branch "iss53"
 ```
-![](assets/fig8.png? "Creating a new branch pointer")
+![](assets/fig8.png?)
 
 >Vous travaillez sur votre site Web et vous faites quelques commits.
 
-![](assets/fig9.png? "The iss53 branch has moved forward with your work")
+![](assets/fig9.png?)
 
 >Vous recevez maintenant un appel indiquant qu'il y a un problème avec le site Web et que vous devez le résoudre immédiatement. Avec Git, vous n'avez pas à déployer votre correctif avec les modifications iss53 que vous avez apportées.
 
@@ -113,7 +113,7 @@ $ git commit -a -m 'Fix broken email address'
 [hotfix 1fb7853] Fix broken email address
 1 file changed, 2 insertions(+)
 ```
-![](assets/fig10.png? "Hotfix branch based on master")
+![](assets/fig10.png?)
 >Vous pouvez exécuter vos tests, vous assurer que le correctif est comme vous le souhaitez et enfin fusionner la branche du correctif retour dans votre branche **Master** pour déployer en production. Vous faites cela avec la commande git merge:
 ```shell
 $ git checkout master
@@ -126,7 +126,7 @@ index.html | 2 ++
 >Vous remarquerez l'expression "Fast-forward" dans cette fusion. Parce que le commit C4 pointé par le
 le correctif de branche dans lequel vous avez fusionné était juste avant le commit C2 sur lequel vous étiez, Git déplace simplement le pointeur vers l'avant. Pour exprimer cela d'une autre manière, lorsque vous essayez de fusionner un commit avec un commit accessible en suivant l'historique du premier commit, Git simplifie les choses en déplaçant le pointeur vers l'avant car il n'y a pas de commits divergents à fusionner - c'est ce qu'on appelle une «Fast-forward».
 
-![](assets/fig11.png? "Master is fast-forwarded to hotfix")
+![](assets/fig11.png?)
 >Une fois votre correctif déployé, vous êtes prêts à revenir au travail que vous faisiez avant que vous ne soyez interrompus. Cependant, vous allez d'abord supprimer la branche du correctif, vu que vous n'en avez plus besoin.
 ```shell
 $ git branch -d hotfix
@@ -142,7 +142,7 @@ $ git commit -a -m 'Finish the new footer [issue 53]'
 [iss53 ad82d7a] Finish the new footer [issue 53]
 1 file changed, 1 insertion(+)
 ```
-![](assets/fig12.png "Work continues on iss53")
+![](assets/fig12.png)
 
 >Il convient de noter ici que le travail que vous avez effectué dans votre branche de correctif n'est pas contenu dans les fichiers de votre branche iss53.
 
