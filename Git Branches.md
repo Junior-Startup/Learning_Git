@@ -142,7 +142,7 @@ $ git commit -a -m 'Finish the new footer [issue 53]'
 [iss53 ad82d7a] Finish the new footer [issue 53]
 1 file changed, 1 insertion(+)
 ```
-![](assets/fig12.png)
+![](assets/fig12.png?)
 
 >Il convient de noter ici que le travail que vous avez effectué dans votre branche de correctif n'est pas contenu dans les fichiers de votre branche iss53.
 
