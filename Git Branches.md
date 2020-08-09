@@ -54,7 +54,7 @@ $ git commit -a -m 'made other changes'
 Toutes ces modifications sont isolées dans des branches séparées : vous pouvez basculer entre les branches et les fusionner lorsque vous le souhaitez.
 
 ![](assets/fig6.png?)
->Vous pouvez le voir facilement avec la commande git log. Si vous exécutez git log --oneline --decorate --graph --all ça va afficher l'historique de vos commits, tout en montrant où se trouvent vos pointeurs de branche et comment votre historique a divergé.
+>Vous pouvez le voir facilement avec la commande git log. Si vous exécutez git log --oneline --decorate --graph --all , ça va afficher l'historique de vos commits, tout en montrant où se trouvent vos pointeurs de branche et comment votre historique a divergé.
 ```shell
 $ git log --oneline --decorate --graph --all
 * c2b9e (HEAD, master) Made other changes
@@ -68,7 +68,7 @@ $ git log --oneline --decorate --graph --all
 >Cela peut être fait en une seule opération avec git checkout -b
 *nouvellebranche*.
 ## Le Branching & le merging
->Passons en revue un exemple simple de branchement et de fusion avec un flux de travail que vous pourriez utiliser dans
+>Passons en revue un exemple simple de branchement et de fusion avec une situation que vous pourriez renconter dans
 le monde réel. Vous suivrez ces étapes:
 >1. Travailler sur un site Web.
 >2. Créer une branche pour une nouvelle user story sur laquelle vous travaillez.
@@ -86,7 +86,7 @@ le monde réel. Vous suivrez ces étapes:
 ![](assets/fig7.png?)
 
 >Vous avez décidé de travailler sur l'issue n ° 53 dans le système de suivi des issues de votre entreprise. Pour créer une nouvelle branche et y basculer en même temps, vous pouvez exécuter la
-commande checkout avec le commutateur -b :
+commande checkout avec -b :
 ```shell
 $ git checkout -b iss53
 Switched to a new branch "iss53"
@@ -124,7 +124,7 @@ index.html | 2 ++
 1 file changed, 2 insertions(+)
 ```
 >Vous remarquerez l'expression "Fast-forward" dans cette fusion. Parce que le commit C4 pointé par le
-le correctif de branche dans lequel vous avez fusionné était juste avant le commit C2 sur lequel vous étiez, Git déplace simplement le pointeur vers l'avant. Pour exprimer cela d'une autre manière, lorsque vous essayez de fusionner un commit avec un commit accessible en suivant l'historique du premier commit, Git simplifie les choses en déplaçant le pointeur vers l'avant car il n'y a pas de commits divergents à fusionner - c'est ce qu'on appelle une «Fast-forward».
+le correctif de branche dans lequel vous avez fusionné était juste avant le commit C2 sur lequel vous étiez, Git déplace simplement le pointeur vers l'avant. Pour exprimer cela d'une autre manière, lorsque vous essayez de fusionner un commit avec un commit accessible en suivant l'historique du premier commit, Git simplifie les choses en déplaçant le pointeur vers l'avant car il n'y a pas de commits divergents à fusionner - c'est ce qu'on appelle «Fast-forward».
 
 ![](assets/fig11.png?)
 >Une fois votre correctif déployé, vous êtes prêts à revenir au travail que vous faisiez avant que vous ne soyez interrompus. Cependant, vous allez d'abord supprimer la branche du correctif, vu que vous n'en avez plus besoin.
